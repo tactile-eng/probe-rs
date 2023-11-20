@@ -52,9 +52,7 @@ cargo_metadata = { version = "0.18" }
 clap = { version = "4", features = ["derive", "env"] }
 colored = { version = "2" }
 crossterm = { version = "<= 0.27" }
-defmt-decoder = { version = "=0.3.10", features = [
-    "unstable",
-] } # pinned because "unstable" has potential for breaking changes
+defmt-decoder = { git = "https://github.com/tactile-eng/defmt", branch = "braille-display-hint", features = ["unstable"] }
 directories = { version = "5" }
 dunce = { version = "1" }
 figment = { version = "0.10", features = ["toml", "json", "yaml", "env"] }
